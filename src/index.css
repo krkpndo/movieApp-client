@@ -1,0 +1,62 @@
+.hero-section {
+  background-image: url('.//pexels-suissounet-1200450.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Darken the background slightly for text contrast */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: -1; /* Behind the text */
+}
+
+/* Title Styling */
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+}
+
+/* Button Styling */
+.hero-section .btn-primary {
+  font-size: 1.25rem;
+  padding: 12px 30px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-section .btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+
+/* Button Focus Effect */
+.hero-section .btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+
